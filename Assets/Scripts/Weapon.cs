@@ -8,6 +8,7 @@ public class Weapon : MonoBehaviour
     [SerializeField] Camera _fpsCamera;
     [SerializeField] float _range = 100f;
     [SerializeField] float _damage = 30f;
+    [SerializeField] ParticleSystem _muzzleFlash;
 
     void Update()
     {
@@ -18,6 +19,17 @@ public class Weapon : MonoBehaviour
     }
 
     private void Shoot()
+    {
+        PlayMuzzleFlash();
+        ProcessRaycast();
+    }
+
+    private void PlayMuzzleFlash()
+    {
+        _muzzleFlash.Play();
+    }
+
+    private void ProcessRaycast()
     {
         RaycastHit hit;
         if (Physics.Raycast(_fpsCamera.transform.position, _fpsCamera.transform.forward, out hit, _range))
