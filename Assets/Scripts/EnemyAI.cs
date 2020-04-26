@@ -54,7 +54,7 @@ public class EnemyAI : MonoBehaviour
 
     private void AttackTarget()
     {
-        Debug.Log(name + " is destorying " + _target.name);
+        Debug.Log(name + " is destorying the " + _target.name);
         GetComponent<Animator>().SetBool("Attack", true);
     }
 
