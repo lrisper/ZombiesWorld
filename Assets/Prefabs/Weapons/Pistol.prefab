@@ -244,6 +244,7 @@ GameObject:
   - component: {fileID: 3395915283318263781}
   - component: {fileID: 3387791930711949861}
   - component: {fileID: 3411366905102457125}
+  - component: {fileID: 2028750757769463489}
   m_Layer: 0
   m_Name: Pistol
   m_TagString: Untagged
@@ -333,6 +334,23 @@ MonoBehaviour:
     type: 3}
   _destoryImpact: 0.1
   _ammoSlot: {fileID: 0}
+--- !u!114 &2028750757769463489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3409999516845714745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cf6174a9f1e347c488627589c8d2a42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _fpsCamera: {fileID: 0}
+  _zoomedOutFOV: 60
+  _zoomedInFOV: 20
+  _zoomedOutSensitivity: 2
+  _zoomedInSensitivity: 0.5
 --- !u!1 &3410157003259269423
 GameObject:
   m_ObjectHideFlags: 0

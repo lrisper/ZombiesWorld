@@ -7,20 +7,16 @@ public class WeaponZoom : MonoBehaviour
 {
 
     [SerializeField] Camera _fpsCamera;
+    [SerializeField] RigidbodyFirstPersonController _fpsController;
     [SerializeField] float _zoomedOutFOV = 60f;
     [SerializeField] float _zoomedInFOV = 20f;
 
     [SerializeField] float _zoomedOutSensitivity = 2f;
     [SerializeField] float _zoomedInSensitivity = .5f;
 
-    RigidbodyFirstPersonController _fpsController;
+
 
     bool _zoomedInToggled = false;
-
-    private void Start()
-    {
-        _fpsController = GetComponent<RigidbodyFirstPersonController>();
-    }
 
     private void Update()
     {

@@ -2103,6 +2103,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6892918613203691674, guid: c6453f8e1f814744d8b94e5a6d1f9942,
+        type: 3}
+      propertyPath: _timeBetweenShoots
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2833902078460850705, guid: c6453f8e1f814744d8b94e5a6d1f9942,
         type: 3}
       propertyPath: _gameOverCanvas
@@ -2182,6 +2187,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 966273790}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1016043484 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 11400004, guid: c6453f8e1f814744d8b94e5a6d1f9942,
+    type: 3}
+  m_PrefabInstance: {fileID: 963573771}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81c9795a96c094f4cbde4d65546aa9b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1016043487 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: c6453f8e1f814744d8b94e5a6d1f9942,
@@ -3393,10 +3410,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shotgun
       objectReference: {fileID: 0}
-    - target: {fileID: 1345368308290578, guid: 9ec98e8c57546a746a43196444d9c97f, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4820123757619348, guid: 9ec98e8c57546a746a43196444d9c97f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.15
@@ -3453,6 +3466,20 @@ PrefabInstance:
       propertyPath: _ammoSlot
       value: 
       objectReference: {fileID: 1016043490}
+    - target: {fileID: 1685549421, guid: 9ec98e8c57546a746a43196444d9c97f, type: 3}
+      propertyPath: _timeBetweenShoots
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4406048520900104464, guid: 9ec98e8c57546a746a43196444d9c97f,
+        type: 3}
+      propertyPath: _fpsCamera
+      value: 
+      objectReference: {fileID: 1858166099}
+    - target: {fileID: 4406048520900104464, guid: 9ec98e8c57546a746a43196444d9c97f,
+        type: 3}
+      propertyPath: _fpsController
+      value: 
+      objectReference: {fileID: 1016043484}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ec98e8c57546a746a43196444d9c97f, type: 3}
 --- !u!1001 &1688766389
@@ -4570,8 +4597,47 @@ PrefabInstance:
       propertyPath: _ammoSlot
       value: 
       objectReference: {fileID: 1016043490}
+    - target: {fileID: 3411366905102457125, guid: 5803c95b173fd49209ea70e21212a9ec,
+        type: 3}
+      propertyPath: _timeBetweenShoots
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2028750757769463489, guid: 5803c95b173fd49209ea70e21212a9ec,
+        type: 3}
+      propertyPath: _fpsCamera
+      value: 
+      objectReference: {fileID: 1858166099}
+    - target: {fileID: 2028750757769463489, guid: 5803c95b173fd49209ea70e21212a9ec,
+        type: 3}
+      propertyPath: _fpsController
+      value: 
+      objectReference: {fileID: 1016043484}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5803c95b173fd49209ea70e21212a9ec, type: 3}
+--- !u!1 &6892918613203691673 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6892918613203691673, guid: c6453f8e1f814744d8b94e5a6d1f9942,
+    type: 3}
+  m_PrefabInstance: {fileID: 963573771}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6892918613203691674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6892918613203691673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cf6174a9f1e347c488627589c8d2a42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _fpsCamera: {fileID: 1858166099}
+  _fpsController: {fileID: 1016043484}
+  _zoomedOutFOV: 60
+  _zoomedInFOV: 20
+  _zoomedOutSensitivity: 2
+  _zoomedInSensitivity: 0.5
 --- !u!4 &7590021683174037695 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7590021683174037695, guid: c6453f8e1f814744d8b94e5a6d1f9942,

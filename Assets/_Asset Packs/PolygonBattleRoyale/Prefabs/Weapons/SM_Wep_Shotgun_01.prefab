@@ -90,13 +90,14 @@ GameObject:
   - component: {fileID: 33395172940313778}
   - component: {fileID: 23603410742146522}
   - component: {fileID: 1685549421}
+  - component: {fileID: 4406048520900104464}
   m_Layer: 0
   m_Name: SM_Wep_Shotgun_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4820123757619348
 Transform:
   m_ObjectHideFlags: 0
@@ -180,6 +181,23 @@ MonoBehaviour:
     type: 3}
   _destoryImpact: 0.1
   _ammoSlot: {fileID: 0}
+--- !u!114 &4406048520900104464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345368308290578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cf6174a9f1e347c488627589c8d2a42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _fpsCamera: {fileID: 0}
+  _zoomedOutFOV: 60
+  _zoomedInFOV: 20
+  _zoomedOutSensitivity: 2
+  _zoomedInSensitivity: 0.5
 --- !u!1 &1639743615942954
 GameObject:
   m_ObjectHideFlags: 0
