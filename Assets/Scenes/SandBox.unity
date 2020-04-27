@@ -2103,6 +2103,31 @@ PrefabInstance:
       propertyPath: _gameOverCanvas
       value: 
       objectReference: {fileID: 1484775667}
+    - target: {fileID: 1968038871178585361, guid: c6453f8e1f814744d8b94e5a6d1f9942,
+        type: 3}
+      propertyPath: ammoSlot.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1968038871178585361, guid: c6453f8e1f814744d8b94e5a6d1f9942,
+        type: 3}
+      propertyPath: ammoSlot.Array.data[1].ammoType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1968038871178585361, guid: c6453f8e1f814744d8b94e5a6d1f9942,
+        type: 3}
+      propertyPath: ammoSlot.Array.data[2].ammoType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1968038871178585361, guid: c6453f8e1f814744d8b94e5a6d1f9942,
+        type: 3}
+      propertyPath: ammoSlot.Array.data[0].AmmoAmount
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1968038871178585361, guid: c6453f8e1f814744d8b94e5a6d1f9942,
+        type: 3}
+      propertyPath: ammoSlot.Array.data[1].AmmoAmount
+      value: 30
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
 --- !u!1001 &966273790
