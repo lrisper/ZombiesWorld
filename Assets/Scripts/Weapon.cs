@@ -12,6 +12,7 @@ public class Weapon : MonoBehaviour
     [SerializeField] GameObject _hitEffect;
     [SerializeField] float _destoryImpact = .1f;
     [SerializeField] Ammo _ammoSlot;
+    [SerializeField] AmmoType _ammoType;
     [SerializeField] float _timeBetweenShoots = .5f;
 
     bool _canShoot = true;
@@ -21,26 +22,26 @@ public class Weapon : MonoBehaviour
         _canShoot = true;
     }
 
-    //void Update()
-    //{
-    //    if (Input.GetButtonDown("Fire1") && _canShoot == true)
-    //    {
-    //        StartCoroutine(Shoot());
-    //    }
-    //}
+    void Update()
+    {
+        if (Input.GetButtonDown("Fire1") && _canShoot == true)
+        {
+            StartCoroutine(Shoot());
+        }
+    }
 
-    //private IEnumerator Shoot()
-    //{
-    //    _canShoot = false;
-    //    if (_ammoSlot.GetCurrentAmmo() > 0)
-    //    {
-    //        PlayMuzzleFlash();
-    //        ProcessRaycast();
-    //        _ammoSlot.ReduceCurrentAmmo();
-    //    }
-    //    yield return new WaitForSeconds(_timeBetweenShoots);
-    //    _canShoot = true;
-    //}
+    private IEnumerator Shoot()
+    {
+        _canShoot = false;
+        if (_ammoSlot.GetCurrentAmmo(_ammoType) > 0)
+        {
+            PlayMuzzleFlash();
+            ProcessRaycast();
+            _ammoSlot.ReduceCurrentAmmo(_ammoType);
+        }
+        yield return new WaitForSeconds(_timeBetweenShoots);
+        _canShoot = true;
+    }
 
     private void PlayMuzzleFlash()
     {
