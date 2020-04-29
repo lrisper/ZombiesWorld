@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e813a981abe62b47afeb292f76b446f, type: 3}
+  m_Name: M_Zombie 2 face
+  m_EditorClassIdentifier: 
+  m_Name: M_Zombie 2 face
+  m_EditorClassIdentifier: 
+  overlayName: M_Zombie 2 face
+  color:
+    r: 1
+    g: 1
+    b: 1
+    a: 1
+  rect:
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  textureList:
+  - {fileID: 0}
+  - {fileID: 0}
+  channelMask: []
+  channelAdditiveMask: []
+  _UMA: {fileID: 11400000, guid: 6a6097f1dccc0894b89e9d0d8ea281e4, type: 2}
+  tags: []
+  Active: 1
+  Elem: 0
+  Place: {fileID: 11400000, guid: e0d0b5a4a7784eb45b08b2a6539946a5, type: 2}
+  Race:
+  - Human Zombie 2
+  Gender: Male
+  OverlayType: Face
+  WearWeight: 
+  Default: 0
+  LinkedToSlot:
+  - {fileID: 11400000, guid: dcb483021009433408083693b3660185, type: 2}
+  ColorPresets:
+  - {fileID: 11400000, guid: 544a30d928e954643b015d9e7d7dad71, type: 2}

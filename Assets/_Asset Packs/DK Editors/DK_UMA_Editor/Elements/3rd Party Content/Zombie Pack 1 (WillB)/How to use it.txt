@@ -1,0 +1,10 @@
+DK UMA Blue Print :
+Zombie Pack 1 settings
+
+The Zombie Pack (september 2015) is providing some 
+Standard Assets files.
+
+You have to replace them by the up to date version available 
+in the UMA 2.x free asset. Desable the importation of the folder or 
+re/install the UMA 2.x Standard Assets files.
+
