@@ -1593,7 +1593,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.04
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1676,6 +1676,11 @@ PrefabInstance:
       propertyPath: _fpsController
       value: 
       objectReference: {fileID: 1016043484}
+    - target: {fileID: 4074843444490286425, guid: c6453f8e1f814744d8b94e5a6d1f9942,
+        type: 3}
+      propertyPath: m_Name
+      value: Flash Light
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6892918613203691674, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
@@ -3645,17 +3650,17 @@ PrefabInstance:
     - target: {fileID: 229211758147086894, guid: 2fd2efb5e65d94f62b81e95866fadf56,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.286
       objectReference: {fileID: 0}
     - target: {fileID: 229211758147086894, guid: 2fd2efb5e65d94f62b81e95866fadf56,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 2.09
       objectReference: {fileID: 0}
     - target: {fileID: 229211758147086894, guid: 2fd2efb5e65d94f62b81e95866fadf56,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 14.821
       objectReference: {fileID: 0}
     - target: {fileID: 229211758147086894, guid: 2fd2efb5e65d94f62b81e95866fadf56,
         type: 3}
