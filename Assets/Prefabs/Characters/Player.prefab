@@ -183,6 +183,7 @@ GameObject:
   - component: {fileID: 5749552228818865031}
   - component: {fileID: 2833902078460850705}
   - component: {fileID: 1968038871178585361}
+  - component: {fileID: 3740099574019889126}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -342,7 +343,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b57085c3de0de48aeade58983aaebbf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ammoSlot: []
+  ammoSlot:
+  - ammoType: 0
+    AmmoAmount: 60
+  - ammoType: 1
+    AmmoAmount: 30
+  - ammoType: 2
+    AmmoAmount: 0
+--- !u!114 &3740099574019889126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46dc740e285914df9985680c354a7188, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _impactCanvas: {fileID: 0}
+  _impactTime: 0.3
 --- !u!1 &1706568922418680071
 GameObject:
   m_ObjectHideFlags: 0
@@ -399,15 +420,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 6892918613203691673}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2cf6174a9f1e347c488627589c8d2a42, type: 3}
+  m_Script: {fileID: 11500000, guid: 3ad31692099d24c76a57692ac8a5c1fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _fpsCamera: {fileID: 2000000}
-  _fpsController: {fileID: 11400004}
-  _zoomedOutFOV: 60
-  _zoomedInFOV: 20
-  _zoomedOutSensitivity: 2
-  _zoomedInSensitivity: 0.5
+  _range: 100
+  _damage: 30
+  _muzzleFlash: {fileID: 6250024543071106221}
+  _hitEffect: {fileID: 9223229459556194369, guid: 4b10a3d07ba214fba8efd303a6a78f35,
+    type: 3}
+  _destoryImpact: 0.1
+  _ammoSlot: {fileID: 1968038871178585361}
+  _ammoType: 0
+  _timeBetweenShoots: 0.5
+  _ammoText: {fileID: 0}
 --- !u!1001 &1561954656
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -475,6 +501,10 @@ PrefabInstance:
       propertyPath: _ammoSlot
       value: 
       objectReference: {fileID: 1968038871178585361}
+    - target: {fileID: 1685549421, guid: 9ec98e8c57546a746a43196444d9c97f, type: 3}
+      propertyPath: _ammoType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1685549421, guid: 9ec98e8c57546a746a43196444d9c97f, type: 3}
       propertyPath: _timeBetweenShoots
       value: 2
@@ -569,21 +599,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6753884577155642838, guid: e6d28bf6cfff84a39a9e359212f1207e,
+    - target: {fileID: 557059954411994808, guid: e6d28bf6cfff84a39a9e359212f1207e,
         type: 3}
       propertyPath: _fpsCamera
       value: 
       objectReference: {fileID: 2000000}
-    - target: {fileID: 6753884577155642838, guid: e6d28bf6cfff84a39a9e359212f1207e,
+    - target: {fileID: 557059954411994808, guid: e6d28bf6cfff84a39a9e359212f1207e,
         type: 3}
-      propertyPath: _ammoSlot
+      propertyPath: _fpsController
       value: 
-      objectReference: {fileID: 1968038871178585361}
-    - target: {fileID: 6753884577155642838, guid: e6d28bf6cfff84a39a9e359212f1207e,
-        type: 3}
-      propertyPath: _timeBetweenShoots
-      value: 0.5
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400004}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6d28bf6cfff84a39a9e359212f1207e, type: 3}
 --- !u!1 &6892918613203691673 stripped
@@ -719,7 +744,7 @@ PrefabInstance:
     - target: {fileID: 6814357424310516137, guid: 22c29f2272f5145f0a2cf9d80ad86300,
         type: 3}
       propertyPath: m_Name
-      value: Spot Light
+      value: Flash Light
       objectReference: {fileID: 0}
     - target: {fileID: 1922944075554574911, guid: 22c29f2272f5145f0a2cf9d80ad86300,
         type: 3}
