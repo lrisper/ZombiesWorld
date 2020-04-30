@@ -13,6 +13,7 @@ public class BatteryPickup : MonoBehaviour
         {
             other.GetComponentInChildren<FlashLightSystem>().RestoreLightAngle(_restoreAngle);
             other.GetComponentInChildren<FlashLightSystem>().AddLightIntensity(_addIntensity);
+            Destroy(gameObject);
         }
     }
 

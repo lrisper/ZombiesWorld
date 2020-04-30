@@ -1710,6 +1710,10 @@ PrefabInstance:
       propertyPath: _ammoType
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 963573773, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+      propertyPath: _ammoText
+      value: 
+      objectReference: {fileID: 5787725484889610201}
     - target: {fileID: 407890070434259956, guid: c6453f8e1f814744d8b94e5a6d1f9942,
         type: 3}
       propertyPath: _fpsCamera
@@ -1720,6 +1724,10 @@ PrefabInstance:
       propertyPath: _fpsController
       value: 
       objectReference: {fileID: 1016043484}
+    - target: {fileID: 2008246116, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+      propertyPath: _ammoText
+      value: 
+      objectReference: {fileID: 5787725484889610201}
     - target: {fileID: 4074843444490286425, guid: c6453f8e1f814744d8b94e5a6d1f9942,
         type: 3}
       propertyPath: m_Name
@@ -3963,8 +3971,65 @@ PrefabInstance:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3719871710144801220, guid: 7e12b0d0715024d4a94b68b6d7e4da7c,
+        type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 762745950831735557, guid: 7e12b0d0715024d4a94b68b6d7e4da7c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -49.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 762745950831735557, guid: 7e12b0d0715024d4a94b68b6d7e4da7c,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 79.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 762745950831735557, guid: 7e12b0d0715024d4a94b68b6d7e4da7c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 34.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 762745950831735557, guid: 7e12b0d0715024d4a94b68b6d7e4da7c,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 46.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1455444332327544368, guid: 7e12b0d0715024d4a94b68b6d7e4da7c,
+        type: 3}
+      propertyPath: m_inputSource
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1455444332327544368, guid: 7e12b0d0715024d4a94b68b6d7e4da7c,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1455444332327544368, guid: 7e12b0d0715024d4a94b68b6d7e4da7c,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1455444332327544368, guid: 7e12b0d0715024d4a94b68b6d7e4da7c,
+        type: 3}
+      propertyPath: m_textAlignment
+      value: 516
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e12b0d0715024d4a94b68b6d7e4da7c, type: 3}
+--- !u!114 &5787725484889610201 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1455444332327544368, guid: 7e12b0d0715024d4a94b68b6d7e4da7c,
+    type: 3}
+  m_PrefabInstance: {fileID: 5787725484889610200}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6892918613203691673 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6892918613203691673, guid: c6453f8e1f814744d8b94e5a6d1f9942,
@@ -3993,6 +4058,7 @@ MonoBehaviour:
   _ammoSlot: {fileID: 1016043490}
   _ammoType: 0
   _timeBetweenShoots: 0.5
+  _ammoText: {fileID: 5787725484889610201}
 --- !u!1001 &9095263024065122204
 PrefabInstance:
   m_ObjectHideFlags: 0
